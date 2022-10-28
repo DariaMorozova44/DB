@@ -25,10 +25,12 @@ public class Main {
 
             userService.saveUser(user4.getName(), user4.getLastName(), user4.getAge());
 
+            userService.removeUserById(2);
+
             userService.getAllUsers();
 
-            userService.cleanUsersTable();
+           userService.cleanUsersTable();
 
             userService.dropUsersTable();
-        }
+       }
     }
